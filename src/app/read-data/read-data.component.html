@@ -1,7 +1,7 @@
 <div>
   <h3>Data</h3>
   <ul>
-    <li *ngFor="let eachData of data | async">
+    <li (click)="removeData(i)" *ngFor="let eachData of data | async; let i of index">
       <a [href]="eachData.url" target="_blank">Name: {{eachData.name}} & age: {{eachData.age}}</a>
     </li>
   </ul>

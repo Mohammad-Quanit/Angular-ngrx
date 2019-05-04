@@ -17,6 +17,10 @@ export function reducer(state: IData[] = [initialState], action: DataClass.DataA
     case DataClass.ClassActionTypes.ADD_DATA: {
       return [...state, action.payload];
     }
+    case DataClass.ClassActionTypes.REMOVE_DATA: {
+      state.splice(action.index, 1);
+      return state
+    }
     default: {
       return state;
     }

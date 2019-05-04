@@ -135,5 +135,10 @@
       }
     }
   },
-  "defaultProject": "ngrx-basics"
+  "defaultProject": "ngrx-basics",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "sass"
+    }
+  }
 }
