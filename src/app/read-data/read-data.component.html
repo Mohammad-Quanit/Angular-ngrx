@@ -1,0 +1,8 @@
+<div>
+  <h3>Data</h3>
+  <ul>
+    <li *ngFor="let eachData of data | async">
+      <a [href]="eachData.url" target="_blank">Name: {{eachData.name}} & age: {{eachData.age}}</a>
+    </li>
+  </ul>
+</div>
